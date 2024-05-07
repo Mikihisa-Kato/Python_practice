@@ -1,6 +1,6 @@
 # 問題1: リスト fruits に "apple", "banana", "cherry" を含めます。リストの最後の要素を出力してください。
 fruits = ['apple', 'banana', 'cherry']
-print(fruits[2])
+print(fruits.pop())
 
 
 # 問題2: リスト numbers が [10, 20, 30, 40, 50] で初期化されています。このリストから、2番目と4番目の要素だけを含む新しいリスト selected_numbers を作成してください。
@@ -64,7 +64,7 @@ print(inventory)
 # 問題12: 辞書 profile には、あるユーザーのプロフィール情報が格納されています: profile = {"name": "Alice", "email": "alice@example.com", "location": "Paris"}。このユーザーがメールアドレスを変更したため、辞書内の "email" の値を "alice@newdomain.com" に更新してください。さらに、このユーザーが新しいスキル "Python programming" を学んだことを示すために、新たなキー "skills" を追加し、値にリスト ["Python programming"] を設定してください。
 profile = {"name": "Alice", "email": "alice@example.com", "location": "Paris"}
 profile["email"] = "alice@newdomain.com"
-profile["slills"] = "Python programming"
+profile["skills"] = "Python programming"
 print(profile)
 
 
