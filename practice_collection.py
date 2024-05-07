@@ -1,6 +1,6 @@
 # 問題1: リスト fruits に "apple", "banana", "cherry" を含めます。リストの最後の要素を出力してください。
 fruits = ['apple', 'banana', 'cherry']
-print(fruits.pop())
+print(fruits[-1])
 
 
 # 問題2: リスト numbers が [10, 20, 30, 40, 50] で初期化されています。このリストから、2番目と4番目の要素だけを含む新しいリスト selected_numbers を作成してください。
