@@ -58,11 +58,7 @@ else:
 year_str = input('年を入力してください:')
 year = int(year_str)
 
-if year % 400 == 0:
-    print('Leap Year')
-elif year % 100 == 0:
-    print('Common Year')
-elif year % 4 == 0:
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print('Leap Year')
 else:
     print('Common Year')
