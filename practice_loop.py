@@ -79,10 +79,10 @@ import math
 prime_list= list()
 
 def check_prime(a, b):
-    for i in range(a, b):
+    if a < 2:
+        a = 2
+    for i in range(a, b+1):
         prime = True
-        if i == 1:
-            prime = False
         for j in range(2, math.floor(math.sqrt(i)) + 1):
             if i % j == 0:
                 prime = False
