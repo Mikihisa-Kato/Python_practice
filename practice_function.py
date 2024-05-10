@@ -3,7 +3,7 @@ def add(a, b):
     return a + b
 
 # test
-x = add(10,12)
+x = add(10, 12)
 print(x)
 
 
@@ -15,7 +15,7 @@ def is_not_empty(str):
         return(False)
     
 # test
-x=input('文字を入力してください:')
+x = input('文字を入力してください:')
 print(is_not_empty(x))
 
 
@@ -28,7 +28,7 @@ def find_max(data):
     
 # test
 print(find_max([]))
-print(find_max([1,3,6,8,2]))
+print(find_max([1, 3, 6, 8, 2]))
 
 
 # 問題4: 半径を引数として受け取り、その半径を持つ円の面積を返す関数 calculate_circle_area を定義してください。円周率は 3.14 を使用してください。
@@ -58,7 +58,7 @@ def filter_even_numbers(data):
     return even_list
 
 # test
-print(filter_even_numbers([1,3,6,8,2]))
+print(filter_even_numbers([1, 3, 6, 8, 2]))
 
 
 # 問題7: 2つのリストを引数として受け取り、両方のリストに共通する要素のみを含む新しいリストを返す関数 find_common_elements を定義してください。
@@ -66,15 +66,15 @@ def find_common_elements(list1, list2):
     return list(set(list1) & set(list2))
 
 # test
-list1 = [1,2,3,6,8]
-list2 = [1,4,5,7,8]
+list1 = [1, 2, 3, 6, 8]
+list2 = [1, 4, 5, 7, 8]
 print(find_common_elements(list1, list2))
 
 
 # 問題8: 整数 n を引数として受け取り、n の階乗を返す関数 factorial を定義してください。
 def factorial(n):
     if n != 0:
-        return n * factorial(n-1)
+        return n * factorial(n - 1)
     return 1
 
 # test
@@ -102,7 +102,7 @@ def calculate_average(*args):
     return sum(args) / len(args)
 
 # test
-print(calculate_average(1,2,3,4,5))
+print(calculate_average(1, 2, 3, 4, 5))
 
 
 # 問題12: 整数リストを引数として受け取り、そのリストの中の奇数だけを含む新しいリストを返す関数 filter_odd_numbers を定義してください。
@@ -114,11 +114,11 @@ def filter_odd_numbers(data):
     return odd_list
 
 # test
-print(filter_odd_numbers([1,3,6,8,2]))
+print(filter_odd_numbers([1, 3, 6, 8, 2]))
 
 
 # 問題13: 文字列と文字を引数として受け取り、その文字列の中にその文字がいくつ含まれているかを返す関数 count_char を定義してください。
-def count_char(str,char):
+def count_char(str, char):
     return str.count(char)
 
 # test
@@ -130,14 +130,14 @@ def triangle_area(base, height):
     return base * height / 2
 
 #test
-print(triangle_area(4,6))
+print(triangle_area(4, 6))
 
 # 問題15: 次の関数が正しく実行されるための引数の組み合わせとして正しいものはどれですか？実行せずに答えてください。
 def add(a, b):
     return a + b
 # A. add(1)
 # B. add(1, 2)
-# C. add(a=1)
+# C. add(a = 1)
 # D. add()
 
 # <解答>
@@ -145,15 +145,16 @@ def add(a, b):
 
 
 # 問題16: 次の関数定義において、greet関数が"Hello, Python!"を出力するために正しい関数の呼び出し方はどれですか？実行せずに答えてください。
-def greet(name="Python"):
+def greet(name = "Python"):
     return "Hello, " + name + "!"
 # A. greet("Hello, Python!")
-# B. greet(name="Python")
+# B. greet(name = "Python")
 # C. greet()
 # D. greet("Python")
 
 # <解答>
-# B. greet(name="Python")
+# B. greet(name = "Python")
+# C. greet()
 # D. greet("Python")
 
 
@@ -166,8 +167,7 @@ def fruits(*args):
 # D. fruits(*["apple", "banana", "cherry"])
 
 # <解答>
-# B. fruits("apple", "banana", "cherry")
-# D. fruits(*["apple", "banana", "cherry"])
+# A. fruits(["apple", "banana", "cherry"])
 
 
 # # 問題18: Pythonで関数を定義するキーワードはどれですか？実行せずに答えてください。
