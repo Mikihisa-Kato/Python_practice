@@ -7,6 +7,8 @@ class Circle:
         return self.__radius
     
     def set_radius(self, value):
+        if value <= 0:
+            raise ValueError('radiusは正数で指定してください。')
         self.__radius = value
 
 # テスト
