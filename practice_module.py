@@ -48,7 +48,6 @@ print(answer2)
 # D. django
 
 # ＜解答＞
-# A. requests
 # B. os
 
 
